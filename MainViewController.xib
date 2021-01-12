@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Add1" customModuleProvider="target">
+            <connections>
+                <outlet property="inputField" destination="kme-0i-JyQ" id="VIt-Mo-G6x"/>
+                <outlet property="numbersLabel" destination="V39-FK-wil" id="Wlq-9V-jlB"/>
+                <outlet property="scoreLabel" destination="riV-Lm-4ha" id="OEi-L0-1r0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="gZ0-T7-lxm">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="736" id="4Yx-eo-Nd9"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="736" id="8Vu-db-F7E"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="414" id="YS9-Hg-OzP"/>
+                        <constraint firstAttribute="height" constant="736" id="a5z-7c-rTI"/>
+                        <constraint firstAttribute="width" constant="414" id="gdd-EO-Nl9"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="u29-2i-hNY"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="score" translatesAutoresizingMaskIntoConstraints="NO" id="a1q-Je-JaP">
+                    <rect key="frame" x="101" y="51" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="lhO-3v-41x"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="number" translatesAutoresizingMaskIntoConstraints="NO" id="oYM-xb-UYz">
+                    <rect key="frame" x="65" y="197" width="298" height="180"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kme-0i-JyQ">
+                    <rect key="frame" x="166" y="421" width="97" height="43"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add 1 to evert digit so that 2843 becomes 3954" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hz-GB-te0">
+                    <rect key="frame" x="26" y="573" width="368" height="85"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riV-Lm-4ha">
+                    <rect key="frame" x="151" y="80" width="112" height="65"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V39-FK-wil">
+                    <rect key="frame" x="141" y="257" width="133" height="57"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="35"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gZ0-T7-lxm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0Vd-f3-Yhg"/>
+                <constraint firstItem="gZ0-T7-lxm" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="MbK-AS-Rpt"/>
+                <constraint firstItem="kme-0i-JyQ" firstAttribute="top" secondItem="oYM-xb-UYz" secondAttribute="bottom" constant="44" id="NMf-Ar-5M8"/>
+                <constraint firstItem="oYM-xb-UYz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="65" id="PFb-Ov-ItZ"/>
+                <constraint firstItem="gZ0-T7-lxm" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Vfk-rT-e1i"/>
+                <constraint firstItem="gZ0-T7-lxm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XpQ-R2-lKN"/>
+                <constraint firstItem="oYM-xb-UYz" firstAttribute="top" secondItem="a1q-Je-JaP" secondAttribute="bottom" constant="18" id="bcC-de-M8Z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oYM-xb-UYz" secondAttribute="trailing" constant="51" id="wul-hn-us6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="140.57971014492756" y="129.61956521739131"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="number" width="302.5" height="129"/>
+        <image name="score" width="149" height="50.5"/>
+    </resources>
+</document>
